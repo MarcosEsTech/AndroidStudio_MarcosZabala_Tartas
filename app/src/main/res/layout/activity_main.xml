@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gastronomía Activa"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pastel"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edad" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:onClick="check"/>
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:onClick="check"/>
+
+    </RadioGroup>
+
+    <CheckBox android:id="@+id/concursoTartas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Participaste en otros concursos antes?"
+        android:onClick="onCheckboxClicked"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextConcurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¿En qué otros concurso estuviste?" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar"
+        android:id="@+id/buttonValidar"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EntregaTartas_MarcosZabala</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+
+    <string name="error_campo_obligatorio">campo obligatorio</string>
+    <string name="error_campo_numerico">campo numérico</string>
+    <string name="error_campo_string">campo no numérico</string>
+    <string name="error_menor_18">Necesaria la mayoría de edad</string>
+</resources>
